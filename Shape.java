@@ -1,31 +1,17 @@
-package HeCacDoiTuongHinhHoc;
+package Triangle;
 
 public class Shape {
 
-  //hai thuộc tính
-  private String color = "green";
-  private boolean filled = true;
+  private String color;
 
-
-
-
-  //không tham số
   public Shape() {
-    this.color = color;
-    this.filled = true;
+    this.color = "red";
   }
 
-
-
-//hai tham số
-  public Shape(String color , boolean filled) {
+  public Shape(String color) {
     this.color = color;
-    this.filled = filled;
   }
 
-
-
-  //getter and setter
   public String getColor() {
     return color;
   }
@@ -34,26 +20,15 @@ public class Shape {
     this.color = color;
   }
 
-  public boolean isFilled() {
-    return filled;
+  public double getArea() {
+    return 0;
   }
 
-  public void setFilled(boolean filled) {
-    this.filled = filled;
+  public double getPerimeter() {
+    return 0;
   }
 
-
-
-//  toString trả về một chuỗi mô tả đầy đủ trạng thái của đối tượng đang xét.
-//  Khi đối tượng được sử dụng trong việc in ra thông tin, nó sẽ tự động gọi phương thức `toString()`
-//  để lấy chuỗi biểu diễn cho đối tượng đó.
-  @Override
   public String toString() {
-    return "The shape of the superclass{" +
-      "color='" + color + '\'' +
-      ", filled=" + filled +
-      '}';
+    return "This shape has color " + color + ".";
   }
 }
-
-
